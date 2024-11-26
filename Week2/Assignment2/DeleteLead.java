@@ -41,10 +41,10 @@ public class DeleteLead {
 		driver.findElement(By.xpath("//span[text()='Name and ID']")).click();
 		driver.findElement(By.xpath("//input[@name= 'id']")).sendKeys("14203");
 		driver.findElement(By.xpath("//button[text() ='Find Leads']")).click();
-		driver.findElement(By.xpath("//a[text() ='17320']")).click();
+		driver.findElement(By.xpath("//a[text() ='14203']")).click();
 		
 		//Using get text attribute prints the ID
-		String id = driver.findElement(By.xpath("//span[text()='TestLeaf (17320)']")).getText();
+		String id = driver.findElement(By.xpath("//span[text()='TestLeaf (14203)']")).getText();
 		System.out.println("The First ID of the Lead is:"+id);
 
 		//Delete the lead
