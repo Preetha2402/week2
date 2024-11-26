@@ -53,7 +53,7 @@ public class DeleteLead {
 		//Check the deleted lead 
 		driver.findElement(By.xpath("//a[text() = 'Find Leads']")).click();
 		driver.findElement(By.xpath("//span[text()='Name and ID']")).click();
-		driver.findElement(By.xpath("//input[@name= 'id']")).sendKeys("17320");
+		driver.findElement(By.xpath("//input[@name= 'id']")).sendKeys("14203");
 		driver.findElement(By.xpath("//button[text() ='Find Leads']")).click();
 		
 		//Printing the msg that has no records to the deleted lead
